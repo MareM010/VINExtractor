@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.markomih.vinextractor.Controller">
+   <children>
+      <HBox prefHeight="971.0" prefWidth="1800.0">
+         <children>
+            <HBox prefHeight="878.0" prefWidth="600.0">
+               <children>
+                  <Pane id="large_bol_pane" fx:id="large_bol_pane" maxHeight="975.0" prefHeight="975.0" prefWidth="590.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView id="image_bol" fx:id="image_bol" fitHeight="975.0" fitWidth="603.0" onDragDropped="#imageDragDropped" onDragOver="#imageDragOver" onMouseDragged="#imageCropMouseDragged" onMousePressed="#imageCropMousePressed" onMouseReleased="#imageCropMouseRelased" pickOnBounds="true" preserveRatio="true">
+                           <viewport>
+                              <Rectangle2D height="975.0" width="600.0" />
+                           </viewport>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <VBox prefHeight="975.0" prefWidth="80.0">
+               <children>
+                  <Button fx:id="delete1" mnemonicParsing="false" onAction="#delete_1" prefHeight="40.0" prefWidth="82.0" text="Delete" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Delete Text field on the right" />
+                     </tooltip></Button>
+                  <Button fx:id="delete2" mnemonicParsing="false" onAction="#delete_2" prefHeight="40.0" prefWidth="82.0" text="Delete" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Delete Text field on the right" />
+                     </tooltip></Button>
+                  <Button fx:id="delete3" mnemonicParsing="false" onAction="#delete_3" prefHeight="40.0" prefWidth="82.0" text="Delete" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Delete Text field on the right" />
+                     </tooltip></Button>
+                  <Button fx:id="delete4" mnemonicParsing="false" onAction="#delete_4" prefHeight="40.0" prefWidth="82.0" text="Delete" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Delete Text field on the right" />
+                     </tooltip></Button>
+                  <Button fx:id="delete5" mnemonicParsing="false" onAction="#delete_5" prefHeight="40.0" prefWidth="82.0" text="Delete" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Delete Text field on the right" />
+                     </tooltip></Button>
+                  <Button fx:id="delete6" mnemonicParsing="false" onAction="#delete_6" prefHeight="40.0" prefWidth="82.0" text="Delete" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Delete Text field on the right" />
+                     </tooltip></Button>
+                  <Button fx:id="delete7" mnemonicParsing="false" onAction="#delete_7" prefHeight="40.0" prefWidth="82.0" text="Delete" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Delete Text field on the right" />
+                     </tooltip></Button>
+                  <Button fx:id="delete8" mnemonicParsing="false" onAction="#delete_8" prefHeight="40.0" prefWidth="82.0" text="Delete" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Delete Text field on the right" />
+                     </tooltip></Button>
+                  <Button fx:id="delete9" mnemonicParsing="false" onAction="#delete_9" prefHeight="40.0" prefWidth="82.0" text="Delete" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Delete Text field on the right" />
+                     </tooltip></Button>
+                  <Button fx:id="delete10" mnemonicParsing="false" onAction="#delete_10" prefHeight="40.0" prefWidth="82.0" text="Delete" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Delete Text field on the right" />
+                     </tooltip></Button>
+                  <Button fx:id="delete11" mnemonicParsing="false" onAction="#delete_11" prefHeight="40.0" prefWidth="82.0" text="Delete" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Delete Text field on the right" />
+                     </tooltip></Button>
+                  <Button fx:id="delete12" mnemonicParsing="false" onAction="#delete_12" prefHeight="40.0" prefWidth="82.0" text="Delete" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Delete Text field on the right" />
+                     </tooltip></Button>
+                  <Button fx:id="delete_all" mnemonicParsing="false" onAction="#deleteAll" prefHeight="35.0" prefWidth="82.0" text="Delete All" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Clear All Fields" />
+                     </tooltip></Button>
+                  <Button fx:id="erase_rects_button" mnemonicParsing="false" onAction="#eraseRectsClicked" prefHeight="42.0" prefWidth="82.0" text="Erase Rects" textFill="RED">
+                     <tooltip>
+                        <Tooltip text="Erase only the last rectangle on the main image" />
+                     </tooltip>
+                  </Button>
+                  <CheckBox fx:id="limit_mouse_movement" mnemonicParsing="false" prefHeight="36.0" prefWidth="80.0" text="Limit Mouse">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Limits mouse movement within image borders. Note: UNSTABLE FUNCTION" />
+                     </tooltip>
+                  </CheckBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="377.0" prefWidth="104.0">
+               <children>
+                  <TextField fx:id="vin_1" minHeight="40.0" minWidth="200.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <TextField fx:id="vin_2" minHeight="40.0" minWidth="200.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <TextField fx:id="vin_3" minHeight="40.0" minWidth="200.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <TextField fx:id="vin_4" minHeight="40.0" minWidth="200.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <TextField fx:id="vin_5" minHeight="40.0" minWidth="200.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <TextField fx:id="vin_6" minHeight="40.0" minWidth="200.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <TextField fx:id="vin_7" minHeight="40.0" minWidth="200.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <TextField fx:id="vin_8" minHeight="40.0" minWidth="200.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <TextField fx:id="vin_9" minHeight="40.0" minWidth="200.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <TextField fx:id="vin_10" minHeight="40.0" minWidth="200.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <TextField fx:id="vin_11" minHeight="40.0" minWidth="200.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <TextField fx:id="vin_12" minHeight="40.0" minWidth="200.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></TextField>
+                  <ProgressBar fx:id="progress_bar" prefHeight="35.0" prefWidth="575.0" progress="0.0" />
+                  <Button fx:id="delete_append" mnemonicParsing="false" onAction="#deleteAndAppend" prefHeight="42.0" prefWidth="568.0" text="Clear Fields and Append to Table" textAlignment="CENTER">
+                     <tooltip>
+                        <Tooltip text="Appends Image name With all VINs above to table">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Tooltip>
+                     </tooltip>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Text fx:id="image_name" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="377.47003173828125">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="image_cropped" fitHeight="300.0" fitWidth="378.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="80.0">
+               <children>
+                  <Button fx:id="copy_1" mnemonicParsing="false" onAction="#copyText1" prefHeight="40.0" prefWidth="82.0" text="Copy">
+                     <tooltip>
+                        <Tooltip text="Copy to Clipboard" />
+                     </tooltip></Button>
+                  <Button fx:id="copy_2" mnemonicParsing="false" onAction="#copyText2" prefHeight="40.0" prefWidth="82.0" text="Copy">
+                     <tooltip>
+                        <Tooltip text="Copy to Clipboard" />
+                     </tooltip></Button>
+                  <Button fx:id="copy_3" mnemonicParsing="false" onAction="#copyText3" prefHeight="40.0" prefWidth="82.0" text="Copy">
+                     <tooltip>
+                        <Tooltip text="Copy to Clipboard" />
+                     </tooltip></Button>
+                  <Button fx:id="copy_4" mnemonicParsing="false" onAction="#copyText4" prefHeight="40.0" prefWidth="82.0" text="Copy">
+                     <tooltip>
+                        <Tooltip text="Copy to Clipboard" />
+                     </tooltip></Button>
+                  <Button fx:id="copy_5" mnemonicParsing="false" onAction="#copyText5" prefHeight="40.0" prefWidth="82.0" text="Copy">
+                     <tooltip>
+                        <Tooltip text="Copy to Clipboard" />
+                     </tooltip></Button>
+                  <Button fx:id="copy_6" mnemonicParsing="false" onAction="#copyText6" prefHeight="40.0" prefWidth="82.0" text="Copy">
+                     <tooltip>
+                        <Tooltip text="Copy to Clipboard" />
+                     </tooltip></Button>
+                  <Button fx:id="copy_7" mnemonicParsing="false" onAction="#copyText7" prefHeight="40.0" prefWidth="82.0" text="Copy">
+                     <tooltip>
+                        <Tooltip text="Copy to Clipboard" />
+                     </tooltip></Button>
+                  <Button fx:id="copy_8" mnemonicParsing="false" onAction="#copyText8" prefHeight="40.0" prefWidth="82.0" text="Copy">
+                     <tooltip>
+                        <Tooltip text="Copy to Clipboard" />
+                     </tooltip></Button>
+                  <Button fx:id="copy_9" mnemonicParsing="false" onAction="#copyText9" prefHeight="40.0" prefWidth="82.0" text="Copy">
+                     <tooltip>
+                        <Tooltip text="Copy to Clipboard" />
+                     </tooltip></Button>
+                  <Button fx:id="copy_10" mnemonicParsing="false" onAction="#copyText10" prefHeight="40.0" prefWidth="82.0" text="Copy">
+                     <tooltip>
+                        <Tooltip text="Copy to Clipboard" />
+                     </tooltip></Button>
+                  <Button fx:id="copy_11" mnemonicParsing="false" onAction="#copyText11" prefHeight="40.0" prefWidth="82.0" text="Copy">
+                     <tooltip>
+                        <Tooltip text="Copy to Clipboard" />
+                     </tooltip></Button>
+                  <Button fx:id="copy_12" mnemonicParsing="false" onAction="#copyText12" prefHeight="40.0" prefWidth="82.0" text="Copy">
+                     <tooltip>
+                        <Tooltip text="Copy to Clipboard" />
+                     </tooltip></Button>
+               </children>
+            </VBox>
+            <GridPane HBox.hgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="662.0" minWidth="10.0" prefWidth="662.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="323.0" minWidth="0.0" prefWidth="0.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="169.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="824.0" minHeight="10.0" prefHeight="824.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="316.3333740234375" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TableView fx:id="table_view" editable="true" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" GridPane.rowIndex="1">
+                    <columns>
+                      <TableColumn fx:id="bol_name_table" prefWidth="125.0" text="Driver Name" />
+                      <TableColumn fx:id="bol_vin_table" prefWidth="125.0" text="BOL VIN" />
+                       <TableColumn fx:id="report_name_table" prefWidth="150.0" text="Report Name" />
+                        <TableColumn fx:id="report_vin_table" prefWidth="150.0" text="Report VIN" />
+                       <TableColumn fx:id="report_truck_number" prefWidth="75.0" text="Truck NO." />
+                    </columns>
+                  </TableView>
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="2">
+                    <buttons>
+                      <Button fx:id="delete_table" mnemonicParsing="false" onAction="#deleteTable" prefHeight="60.0" prefWidth="779.0" style="-fx-translate-x: -10;" text="Delete Table">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <effect>
+                              <ColorAdjust hue="-0.2" saturation="0.16" />
+                           </effect>
+                           <tooltip>
+                              <Tooltip text="Delete all extracted and loaded data">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Tooltip>
+                           </tooltip>
+                        </Button>
+                        <Button fx:id="load_csv" mnemonicParsing="false" onAction="#loadCsvReport" prefHeight="60.0" text="Load CSV Report">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="Load report downloaded from a scanner. NOTE: Mazda Report needs to be converted to CSV beofre loading!">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Tooltip>
+                           </tooltip>
+                        </Button>
+                    </buttons>
+                  </ButtonBar>
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                        <Button fx:id="export_extracted_button" mnemonicParsing="false" onAction="#exportExtractedData" prefHeight="55.0" prefWidth="652.0" style="-fx-translate-x: -10;" text="Export extracted data to Excel">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="Export only data loaded From BOL Picture to CSV. May be used for further development">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Tooltip>
+                           </tooltip>
+                        </Button>
+                        <Button fx:id="export_all_button" mnemonicParsing="false" onAction="#exportAll" prefHeight="55.0" text="Export complete table to Excel">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="Exports whole table as displayed on a screen. Make sure wanted report is loaded.">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font></Tooltip>
+                           </tooltip>
+                        </Button>
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </GridPane>
+         </children>
+         <effect>
+            <Glow level="0.44" />
+         </effect>
+      </HBox>
+      <HBox layoutY="967.0" prefHeight="35.0" prefWidth="1800.0">
+         <children>
+            <Button fx:id="load_image_button" mnemonicParsing="false" onAction="#loadImageButton" prefWidth="568.0" text="Load BOL Picture" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <ColorAdjust brightness="-0.07" contrast="-0.02" hue="0.01" saturation="-1.0" />
+               </effect>
+               <tooltip>
+                  <Tooltip text="Load BOL By clicking on this, or dragging and dropping it in BOL image area.">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Tooltip>
+               </tooltip>
+            </Button>
+            <ButtonBar prefHeight="35.0" prefWidth="650.0">
+               <buttons>
+                  <RadioButton id="text_recongition_mode" fx:id="text_recongition_mode" mnemonicParsing="false" onAction="#TextRecongitionMode" prefHeight="17.0" text="Text recongition mode">
+                     <tooltip>
+                        <Tooltip text="Recongize Text from images" />
+                     </tooltip></RadioButton>
+                  <RadioButton id="bar_code_mode" fx:id="bar_code_mode" mnemonicParsing="false" onAction="#barCodeMode" prefHeight="17.0" prefWidth="777.0" text="Bar code reader mode">
+                     <tooltip>
+                        <Tooltip text="Reads VINs from Barcodes. Car read Multiple Barcodes at a Time." />
+                     </tooltip></RadioButton>
+                  <CheckBox fx:id="vin_correction_checkbox" mnemonicParsing="false" prefHeight="34.0" prefWidth="73.0" selected="true" text="VIN Auto Correction">
+                     <tooltip>
+                        <Tooltip text="Enables text prost processing for more accurate VIN reading" />
+                     </tooltip></CheckBox>
+                  <CheckBox fx:id="image_preprocessing" mnemonicParsing="false" onAction="#imagePreprocessing" prefHeight="17.0" selected="true" text="Image Pre-processing">
+                     <tooltip>
+                        <Tooltip text="If checked, applies GaussianBlur, Binarisation and Erosion Algorithms. Super-resolution and grayscale preprocessing is used anyway." />
+                     </tooltip>
+                  </CheckBox>
+               </buttons>
+            </ButtonBar>
+            <CheckBox fx:id="rect_auto_erase_checkbox" mnemonicParsing="false" prefHeight="34.0" prefWidth="131.0" text="Rect Auto Erase">
+               <tooltip>
+                  <Tooltip text="Automatic deletion of marked areas on mouse relase" />
+               </tooltip></CheckBox>
+            <ChoiceBox fx:id="table_brand_choice_box" onAction="#choiceBoxMethod" prefHeight="32.0" prefWidth="150.0" value="All Units">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="All Units" />
+                     <String fx:value="Mazda Units" />
+                  </FXCollections>
+               </items>
+               <effect>
+                  <ColorAdjust brightness="0.05" contrast="-0.31" hue="-0.1" saturation="-0.22" />
+               </effect>
+               <tooltip>
+                  <Tooltip text="Selection between units to compare and reports to load" />
+               </tooltip>
+            </ChoiceBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="24.8033447265625" />
+            <Label id="my_name" fx:id="my_name" prefHeight="33.0" prefWidth="275.0" text="Created by Marko Mihajlović - Scott">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+
+         </children>
+      </HBox>
+   </children>
+</Pane>
