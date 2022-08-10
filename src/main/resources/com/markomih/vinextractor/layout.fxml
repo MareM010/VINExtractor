@@ -247,11 +247,11 @@
                <children>
                   <TableView fx:id="table_view" editable="true" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" GridPane.rowIndex="1">
                     <columns>
-                      <TableColumn fx:id="bol_name_table" prefWidth="125.0" text="Driver Name" />
-                      <TableColumn fx:id="bol_vin_table" prefWidth="125.0" text="BOL VIN" />
-                       <TableColumn fx:id="report_name_table" prefWidth="150.0" text="Report Name" />
-                        <TableColumn fx:id="report_vin_table" prefWidth="150.0" text="Report VIN" />
-                       <TableColumn fx:id="report_truck_number" prefWidth="75.0" text="Truck NO." />
+                      <TableColumn fx:id="bol_name_table" prefWidth="125.0" sortable="false" text="Driver Name" />
+                      <TableColumn fx:id="bol_vin_table" prefWidth="125.0" sortable="false" text="BOL VIN" />
+                       <TableColumn fx:id="report_name_table" prefWidth="150.0" sortable="false" text="Report Name" />
+                        <TableColumn fx:id="report_vin_table" prefWidth="150.0" sortable="false" text="Report VIN" />
+                       <TableColumn fx:id="report_truck_number" prefWidth="75.0" sortable="false" text="Truck NO." />
                     </columns>
                   </TableView>
                   <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="2">
